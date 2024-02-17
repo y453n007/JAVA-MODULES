@@ -1,19 +1,19 @@
 public class Program {
-	public static void main(String[] args) {
-		int number = 479598;
-		short ret = 0;
+	public static void	main(String[] args) {
+		byte	ret = 0;
+		int		number = 479598;
 
-		ret += number % 10;
+		ret += (byte) (number % 10);
 		number /= 10;
-		ret += number % 10;
+		ret += (byte) (number % 10);
 		number /= 10;
-		ret += number % 10;
+		ret += (byte) (number % 10);
 		number /= 10;
-		ret += number % 10;
+		ret += (byte) (number % 10);
 		number /= 10;
-		ret += number % 10;
+		ret += (byte) (number % 10);
 		number /= 10;
-		ret += number;
-		System.out.printf("%d\n", ret);
+		ret += (byte) number;
+		System.out.println(ret);
 	}
 }
